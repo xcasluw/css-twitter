@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twitter</title>
+    <script src="https://kit.fontawesome.com/c2a4905220.js" crossorigin="anonymous"></script>
 
     <style>
         * {
@@ -11,60 +13,87 @@
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
+
         .content {
             display: flex;
             flex-direction: row;
         }
+
         .inside-container {
             position: fixed;
-            height: 85%;
+            height: 90%;
             width: 50%;
         }
+
         .section-one {
             left: 0;
-            background-color: #1DA1F2;
+            background-color: #7ACCFE;
             display: flex;
             justify-content: center;
             flex-direction: column;
-            padding: 120px;
+            padding: 15%;
         }
-        
+
+        .section-one::after {
+            content: "";
+            background: url(./background.png);
+            background-repeat: no-repeat;
+            background-size: 1400px 1000px;
+            top: -10%;
+            right: 0;
+            bottom: 0;
+            left: -40%;
+            position: absolute;
+            z-index: -1;
+        }
+
         .section-one span {
             color: #fff;
             font-size: 20px;
             font-weight: 700;
             margin: 28px 0;
         }
+
         .section-two {
             left: 50%;
             background-color: #15202B;
             display: flex;
             justify-content: center;
             flex-direction: column;
-            padding: 10px 130px;
+            padding: 10px 16%;
         }
+
         .section-two img {
             width: 40px;
             margin-bottom: 30px;
         }
+
         .section-two span {
             color: #fff;
             font-size: 30px;
             font-weight: 700;
             line-height: 42px;
         }
+
+        .icons-fa {
+            margin-right: 10px;
+        }
+
         .buttons {
             margin-top: 40px;
         }
+
         .buttons p {
             margin: 10px 0;
             color: #fff;
             font-size: 16px;
             font-weight: 700;
         }
+
         .buttons button {
             width: 100%;
             border-radius: 18px;
@@ -73,40 +102,68 @@
             font-size: 16px;
             font-weight: 700;
             cursor: pointer;
+            transition: all 0.5s;
         }
+
         .button-one {
             background-color: #1DA1F2;
             color: #fff;
             outline: none;
             border: 1px solid #1DA1F2;
         }
+
         .button-one:hover {
-            background-color: #1a96e4;
+            background-color: #168cd4;
         }
+
         .button-two:hover {
             background-color: #203244;
         }
+
         .button-two {
             background-color: #15202B;
             color: #1DA1F2;
             outline: none;
             border: 1px solid #1DA1F2;
         }
+
         .footer {
             background-color: #15202B;
             position: fixed;
             bottom: 0;
-            height: 15%;
+            height: 10%;
             width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer a {
+            text-decoration: none;
+            font-size: 14px;
+            color: #999;
+            margin: 0 10px;
+        }
+
+        .footer span {
+            font-size: 14px;
+            color: #999;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
     <div class="content">
         <div class="inside-container section-one">
-            <span>Siga o que for do seu interesse.</span>
-            <span>Saiba sobre o que as pessoas estão falando.</span>
-            <span>Participe da conversa.</span>
+            <span><i class="fas fa-search icons-fa"></i> Siga o que for do seu interesse.</span>
+            <span><i class="fas fa-user-friends icons-fa"></i> Saiba sobre o que as pessoas estão falando.</span>
+            <span><i class="fas fa-comment icons-fa"></i> Participe da conversa.</span>
         </div>
         <div class="inside-container section-two">
             <img src="./twitter-logo.png" alt="">
@@ -119,7 +176,24 @@
         </div>
     </div>
     <div class="footer">
-
+        <a href="#">Sobre</a>
+        <a href="#">Central de Ajuda</a>
+        <a href="#">Termos</a>
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Política de Cookies</a>
+        <a href="#">Infomações de anúncios</a>
+        <a href="#">Blog</a>
+        <a href="#">Status</a>
+        <a href="#">Carreiras</a>
+        <a href="#">Recursos da marca</a>
+        <a href="#">Publicidade</a>
+        <a href="#">Marketing</a>
+        <a href="#">Twitter para Empresas</a>
+        <a href="#">Desenvolvedores</a>
+        <a href="#">Diretório</a>
+        <a href="#">Configurações</a>
+        <span>© 2020 Twitter, Inc.</span>
     </div>
 </body>
+
 </html>
