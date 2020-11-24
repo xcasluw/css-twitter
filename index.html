@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .content {
+            display: flex;
+            flex-direction: row;
+        }
+        .inside-container {
+            position: fixed;
+            height: 85%;
+            width: 50%;
+        }
+        .section-one {
+            left: 0;
+            background-color: #1DA1F2;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 120px;
+        }
+        
+        .section-one span {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 28px 0;
+        }
+        .section-two {
+            left: 50%;
+            background-color: #15202B;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 10px 130px;
+        }
+        .section-two img {
+            width: 40px;
+            margin-bottom: 30px;
+        }
+        .section-two span {
+            color: #fff;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 42px;
+        }
+        .buttons {
+            margin-top: 40px;
+        }
+        .buttons p {
+            margin: 10px 0;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        .buttons button {
+            width: 100%;
+            border-radius: 18px;
+            height: 40px;
+            margin: 6px 0;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        .button-one {
+            background-color: #1DA1F2;
+            color: #fff;
+            outline: none;
+            border: 1px solid #1DA1F2;
+        }
+        .button-one:hover {
+            background-color: #1a96e4;
+        }
+        .button-two:hover {
+            background-color: #203244;
+        }
+        .button-two {
+            background-color: #15202B;
+            color: #1DA1F2;
+            outline: none;
+            border: 1px solid #1DA1F2;
+        }
+        .footer {
+            background-color: #15202B;
+            position: fixed;
+            bottom: 0;
+            height: 15%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="inside-container section-one">
+            <span>Siga o que for do seu interesse.</span>
+            <span>Saiba sobre o que as pessoas estão falando.</span>
+            <span>Participe da conversa.</span>
+        </div>
+        <div class="inside-container section-two">
+            <img src="./twitter-logo.png" alt="">
+            <span>Saiba o que esta acontecendo no mundo agora</span>
+            <div class="buttons">
+                <p>Inscreva-se no Twitter hoje mesmo.</p>
+                <button class="button-one">Inscreva-se</button>
+                <button class="button-two">Entrar</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+</body>
+</html>
